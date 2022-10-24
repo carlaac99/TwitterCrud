@@ -1,0 +1,13 @@
+<div class="tweet-container">
+    <div class="tweet" *ngFor="let tweet of tweets">
+        <header>
+            <p>{{tweet.name}}:</p>
+        </header>
+        <p>{{tweet.description}}</p>
+        <a routerLink="/detail/{{tweet.id}}"><button>See Details</button></a>
+        <a routerLink="/update/{{tweet.id}}"><button type="submit">Edit</button></a>
+        <button type="submit" (click)="deleteTweet(tweet.id)" >Delete</button>
+
+
+    </div>
+</div>
