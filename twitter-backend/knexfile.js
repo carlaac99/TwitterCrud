@@ -10,7 +10,7 @@ module.exports = {
     connection: {
       database: 'twitter',
       user:     'postgres',
-      password: 'alizEE7yO'
+      password: ''
     },
 
     migrations: {
